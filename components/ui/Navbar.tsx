@@ -6,13 +6,25 @@ import Link from 'next/link'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(1024) // Default to desktop
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
     }
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    // Set initial width
+    setWindowWidth(window.innerWidth)
+
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
   return (
@@ -44,11 +56,11 @@ export default function Navbar() {
             }}>
               📞 +91-9999-999-999
             </a>
-            <a href="mailto:info@primeworldenterprises.com" style={{ 
-              color: '#a8b2d1', 
+            <a href="mailto:info@primeworldenterprises.com" style={{
+              color: '#a8b2d1',
               textDecoration: 'none',
               transition: 'color 0.3s',
-              display: window.innerWidth < 768 ? 'none' : 'inline'
+              display: windowWidth < 768 ? 'none' : 'inline'
             }}>
               📧 info@primeworldenterprises.com
             </a>
@@ -150,7 +162,7 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div style={{
-              display: window.innerWidth >= 1024 ? 'flex' : 'none',
+              display: windowWidth >= 1024 ? 'flex' : 'none',
               alignItems: 'center',
               gap: '2rem'
             }}>
@@ -212,7 +224,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               style={{
-                display: window.innerWidth >= 1024 ? 'none' : 'flex',
+                display: windowWidth >= 1024 ? 'none' : 'flex',
                 flexDirection: 'column',
                 gap: '6px',
                 width: '40px',
