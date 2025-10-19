@@ -237,7 +237,7 @@ export default function Home() {
               <div className="text-6xl mb-6">⏰</div>
               <h3 className="text-2xl mb-4">24/7 Availability</h3>
               <p className="text-text-secondary leading-relaxed">
-                Round-the-clock emergency service. Call us anytime, any day. We're always ready to help you.
+                Round-the-clock emergency service. Call us anytime, any day. We are always ready to help you.
               </p>
             </div>
 

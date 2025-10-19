@@ -4,7 +4,6 @@ export default function About() {
   return (
     <div className="pt-32 pb-20">
       <div className="container">
-        {/* Hero Section */}
         <div className="text-center mb-20">
           <h1 className="mb-6">About Prime World Enterprises</h1>
           <p className="text-2xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
@@ -12,7 +11,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* Company Story */}
         <div className="max-w-5xl mx-auto mb-20">
           <div className="glass-card">
             <h2 className="mb-6">Our Story</h2>
@@ -21,7 +19,7 @@ export default function About() {
                 Founded in 2015, Prime World Enterprises started with a simple mission: to provide reliable, professional, and affordable repair services for essential home appliances and vehicles. What began as a small team of three passionate technicians has grown into a full-service enterprise with over 50 certified professionals.
               </p>
               <p>
-                Over the past decade, we've served more than 10,000 satisfied customers, completing over 25,000 successful service calls. Our commitment to quality, transparency, and customer satisfaction has made us the most trusted name in the industry.
+                Over the past decade, we have served more than 10,000 satisfied customers, completing over 25,000 successful service calls. Our commitment to quality, transparency, and customer satisfaction has made us the most trusted name in the industry.
               </p>
               <p>
                 Today, we operate 24/7 with state-of-the-art diagnostic equipment, genuine spare parts inventory, and a fleet of fully-equipped service vehicles. Our technicians undergo continuous training to stay updated with the latest technology and repair techniques.
@@ -30,13 +28,12 @@ export default function About() {
           </div>
         </div>
 
-        {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-10 mb-20 max-w-6xl mx-auto">
           <div className="glass-card">
             <div className="text-5xl mb-6">🎯</div>
             <h3 className="text-3xl mb-6">Our Mission</h3>
             <p className="text-text-secondary text-lg leading-relaxed">
-              To deliver exceptional repair and maintenance services that exceed customer expectations through technical excellence, transparent pricing, and uncompromising quality standards. We aim to be the first choice for every household's service needs.
+              To deliver exceptional repair and maintenance services that exceed customer expectations through technical excellence, transparent pricing, and uncompromising quality standards. We aim to be the first choice for every household service needs.
             </p>
           </div>
 
@@ -44,12 +41,11 @@ export default function About() {
             <div className="text-5xl mb-6">🚀</div>
             <h3 className="text-3xl mb-6">Our Vision</h3>
             <p className="text-text-secondary text-lg leading-relaxed">
-              To become the region's most trusted and innovative service provider, setting industry benchmarks for quality, reliability, and customer care. We envision a future where every home has access to professional, affordable maintenance solutions.
+              To become the region most trusted and innovative service provider, setting industry benchmarks for quality, reliability, and customer care. We envision a future where every home has access to professional, affordable maintenance solutions.
             </p>
           </div>
         </div>
 
-        {/* Core Values */}
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="mb-6">Our Core Values</h2>
@@ -109,7 +105,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Why We're Different */}
         <div className="glass-card max-w-5xl mx-auto mb-20">
           <h2 className="mb-8 text-center">What Makes Us Different?</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -152,7 +147,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats */}
         <div className="grid md:grid-cols-4 gap-8 mb-20">
           <div className="glass-card text-center">
             <div className="text-5xl font-bold gradient-text mb-3">10+</div>
@@ -172,7 +166,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* CTA */}
         <div className="text-center glass-card max-w-4xl mx-auto">
           <h3 className="text-3xl mb-6">Experience the Difference</h3>
           <p className="text-text-secondary text-lg mb-8 max-w-2xl mx-auto">

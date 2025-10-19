@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Contact() {
   return (
     <div className="pt-32 pb-20">
@@ -8,7 +6,7 @@ export default function Contact() {
         <div className="text-center mb-20">
           <h1 className="mb-6">Get In Touch</h1>
           <p className="text-2xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
-            We're here to help 24/7. Reach out through any channel and our team will respond within minutes.
+            We are here to help 24/7. Reach out through any channel and our team will respond within minutes.
           </p>
         </div>
 
@@ -152,9 +150,9 @@ export default function Contact() {
 
               <div>
                 <label className="block text-sm font-semibold mb-3 text-text-secondary">Problem Description *</label>
-                <textarea 
+                <textarea
                   rows={4}
-                  placeholder="Describe the issue you're facing..."
+                  placeholder="Describe the issue you are facing..."
                   className="w-full px-6 py-4 bg-dark border border-white/20 rounded-xl focus:border-secondary outline-none transition-colors resize-none text-lg"
                   required
                 ></textarea>
